@@ -1,0 +1,18 @@
+//BINARY SEARCH 
+
+class Solution {
+    public int peakIndexInMountainArray(int[] arr)
+     {
+        int beg=0, end=arr.length-1;
+        while(beg<=end)
+        {
+            int mid=beg+(end-beg)/2;
+            if(arr[mid]<arr[mid+1]) //increasing side of the array
+            beg=mid+1; //move ahead
+            else //decreasing side ie this element is the peak
+            end=mid;
+        }
+            return end;// or beg sice both point to the same index
+
+        }
+    }
