@@ -1,7 +1,5 @@
 //BINARY SEARCH 
 
-SOLN:1
-
 class Solution {
     public int peakIndexInMountainArray(int[] arr)
      {
